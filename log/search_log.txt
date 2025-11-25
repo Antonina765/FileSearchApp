@@ -1,0 +1,313 @@
+=== Search: 2025-11-07 13:21:54 ===
+Dir: /Users/antoninaber
+Query: Menu
+Found: /Users/antoninaber/.cursor/extensions/hediet.vscode-drawio-1.6.6-universal/drawio/src/main/webapp/js/grapheditor/Menus.js
+Found: /Users/antoninaber/.cursor/extensions/hediet.vscode-drawio-1.6.6-universal/drawio/src/main/webapp/js/diagramly/Menus.js
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/steam/games/PlatformMenu.vdf
+Error: filesystem error: in recursive_directory_iterator::operator++(): attempting recursion into "/Users/antoninaber/Library/Application Support/MobileSync": Operation not permitted
+=== End Search ===
+
+=== Search: 2025-11-07 13:21:57 ===
+Dir: /Users/antoninaber
+Query: Menu
+Found: /Users/antoninaber/.cursor/extensions/hediet.vscode-drawio-1.6.6-universal/drawio/src/main/webapp/js/grapheditor/Menus.js
+Found: /Users/antoninaber/.cursor/extensions/hediet.vscode-drawio-1.6.6-universal/drawio/src/main/webapp/js/diagramly/Menus.js
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/steam/games/PlatformMenu.vdf
+Error: filesystem error: in recursive_directory_iterator::operator++(): attempting recursion into "/Users/antoninaber/Library/Application Support/MobileSync": Operation not permitted
+=== End Search ===
+
+=== Search: 2025-11-07 13:22:09 ===
+Dir: /Users/antoninaber
+Query: Menu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Menu.txt
+Error: filesystem error: in recursive_directory_iterator::operator++(): attempting recursion into "/Users/antoninaber/Library/Application Support/MobileSync": Operation not permitted
+=== End Search ===
+
+=== Search: 2025-11-07 13:22:18 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+=== End Search ===
+
+=== Search: 2025-11-07 13:23:04 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Menu.txt
+=== End Search ===
+
+=== Search: 2025-11-07 13:24:37 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+=== End Search ===
+
+=== Search: 2025-11-07 13:25:02 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+=== End Search ===
+
+=== Search: 2025-11-07 13:25:25 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+Found: /Users/antoninaber/Desktop/СП/SFML/examples/cocoa/MainMenu.xib
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/axobject-query@4.1.0/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/node_modules/.pnpm/jsdom@26.1.0/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.tsx
+Found: /Users/antoninaber/Desktop/InnoNetfixFrontend/src/features/home/ui/MovieMenu.module.scss
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/wwwroot/uploads/menus/77b2b98a-d3d9-4db1-ae65-38512c05cedcMenu.txt
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe_App/Models/Booking/MenuUploadViewModel.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/Cafe_App/Cafe.Data.Interface/Models/IMenuItemData.cs
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/generated/HTMLMenuElement.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/jsdom/lib/jsdom/living/nodes/HTMLMenuElement-impl.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuBarRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRadioRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListPopupRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuButtonRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuListOptionRole.js
+Found: /Users/antoninaber/Desktop/курсы/Net18Online/ReactApp/my-app-test/node_modules/axobject-query/lib/etc/objects/MenuItemCheckBoxRole.js
+Found: /Users/antoninaber/Desktop/Menu.txt
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.Designer.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Migrations/20250510151556_BookindAndMenu.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Repositories/MenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data/Models/MenuItemData.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Repositories/IMenuRepository.cs
+Found: /Users/antoninaber/Desktop/MSiSvIT-Cafe-App/Cafe-App/Cafe.Data.Interface/Models/IMenuItemData.cs
+=== End Search ===
+
+=== Search: 2025-11-07 13:39:00 ===
+Dir: /Users/antoninaber/Desktop
+Query: aфф
+Error: filesystem error: in recursive_directory_iterator::operator++(): attempting recursion into "/Users/antoninaber/Library/Application Support/MobileSync": Operation not permitted
+=== End Search ===
+
+=== Search: 2025-11-07 13:39:09 ===
+Dir: /Users/antoninaber/Desktop
+Query: a
+=== End Search ===
+
+=== Search: 2025-11-07 13:39:35 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+=== End Search ===
+
+=== Search: 2025-11-07 13:41:37 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+=== End Search ===
+
+=== Search: 2025-11-07 14:04:00 ===
+Dir: /Users/antoninaber/Desktop
+Query: Menu
+=== End Search ===
+
