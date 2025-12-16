@@ -17,6 +17,8 @@ std::mutex resultMutex;
 std::vector<std::string> searchResults;
 std::atomic<bool> searching(false);
 std::atomic<bool> cancelRequested(false);
+std::atomic<int> threadCount(1);
+sf::Text* countText = nullptr;
 
 std::string homeDir = std::string(getenv("HOME") ? getenv("HOME") : "/Users/antoninaber/");
 
@@ -38,33 +40,50 @@ static void appendUtf8(std::string &out, uint32_t cp) {
     }
 }
 
+// UTF-8 → U32
+static sf::String utf8ToU32(const std::string& utf8) {
+    return sf::String::fromUtf8(utf8.begin(), utf8.end());
+}
+
+// U32 → UTF-8
+static std::string u32ToUtf8(const sf::String& u32)
+{
+    std::string out;
+    for (char32_t c : u32)
+    {
+        sf::Utf8::encode(c, std::back_inserter(out));
+    }
+    return out;
+}
+
 // Split a UTF-8 string into "visual" wrapped lines (attempt to break at '/' when possible)
-static std::vector<std::string> wrapPath(const std::string &s, size_t maxChars) {
+static std::vector<std::string> wrapPath(const std::string& utf8, size_t maxWidth)
+{
     std::vector<std::string> lines;
-    if (s.empty()) return lines;
-    size_t start = 0;
-    while (start < s.size()) {
-        // if remaining <= maxChars -> push and break
-        if (s.size() - start <= maxChars) {
-            lines.push_back(s.substr(start));
-            break;
-        }
-        // try to break at nearest '/' after start and before start+maxChars (search backwards from limit)
-        size_t limit = start + maxChars;
-        if (limit >= s.size()) limit = s.size() - 1;
-        size_t breakPos = std::string::npos;
-        for (size_t i = limit; i > start; --i) {
-            if (s[i] == '/') { breakPos = i + 1; break; } // keep the slash at line end/start
-        }
-        if (breakPos == std::string::npos) {
-            // no slash — just break at maxChars (beware of UTF-8 multi-byte; this is approximate)
-            lines.push_back(s.substr(start, maxChars));
-            start += maxChars;
-        } else {
-            lines.push_back(s.substr(start, breakPos - start));
-            start = breakPos;
+
+    sf::String u32 = sf::String::fromUtf8(utf8.begin(), utf8.end());
+    sf::String current;
+
+    for (size_t i = 0; i < u32.getSize(); ++i)
+    {
+        current += u32[i];
+        if (current.getSize() >= maxWidth)
+        {
+            // Конвертируем sf::String -> std::string UTF-8
+            sf::U8String u8line = current.toUtf8();
+            std::string line(u8line.begin(), u8line.end());
+            lines.push_back(line);
+            current.clear();
         }
     }
+
+    if (!current.isEmpty())
+    {
+        sf::U8String u8line = current.toUtf8();
+        std::string line(u8line.begin(), u8line.end());
+        lines.push_back(line);
+    }
+
     return lines;
 }
 
@@ -79,6 +98,13 @@ static std::ofstream openLogFile() {
     return f;
 }
 
+static std::ofstream openThreadLog() {
+    fs::path logDir = fs::path(homeDir) / "Desktop" / "FileSearchApp" / "log";
+    try { fs::create_directories(logDir);} catch(...) {}
+    fs::path logFile = logDir / "potoc.log";
+    return std::ofstream(logFile.string(), std::ios::app);
+}
+
 // Timestamp string for log
 static std::string timestampNow() {
     using namespace std::chrono;
@@ -91,8 +117,13 @@ static std::string timestampNow() {
     localtime_r(&t, &tm);
 #endif
     std::ostringstream oss;
-    oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
+    oss << std::put_time(&tm, "%H:%M:%S");
     return oss.str();
+}
+
+sf::String toSf(const std::string& utf8)
+{
+    return sf::String::fromUtf8(utf8.begin(), utf8.end());
 }
 
 // ----------------- Search function -----------------
@@ -111,25 +142,73 @@ void searchFiles(const fs::path& dir, const std::string& filenamePart, bool sear
         fs::path startDir = dir;
         if (searchEverywhere) startDir = fs::path(homeDir);
 
-        for (auto& entry : fs::recursive_directory_iterator(startDir)) {
-            if (cancelRequested.load()) {
-                std::lock_guard<std::mutex> lg(resultMutex);
-                searchResults = { "Search cancelled" };
-                searching = false;
-                log << "Search cancelled\n";
-                return;
-            }
-            if (entry.is_regular_file()) {
-                std::string name = entry.path().filename().string();
-                if (name.find(filenamePart) != std::string::npos) {
-                    found.push_back(entry.path().string());
-                    //log << "Found: " << entry.path().string() << "\n";
+        // Collect files first
+        std::vector<fs::path> allFiles;
+        std::error_code ec;
+        for (auto &entry : fs::recursive_directory_iterator(startDir, fs::directory_options::skip_permission_denied, ec)) {
+            if (!entry.is_regular_file()) continue;
+            allFiles.push_back(entry.path());
+        }
+
+        // Parallel processing
+        std::vector<std::thread> workers;
+        std::mutex foundMutex;
+
+        auto workerFunc = [&](int start, int end) {
+            for (int i = start; i < end; ++i) {
+                if (cancelRequested.load()) return;
+
+                auto toLower = [](const std::string &s) {
+                    std::string out;
+                    for (unsigned char c : s) out += std::tolower(c);
+                    return out;
+                };
+
+                const auto &path = allFiles[i];
+                std::string name = path.filename().string();
+
+                // сравнение без учёта регистра
+                if (toLower(name).find(toLower(filenamePart)) != std::string::npos) {
+                    {
+                        std::lock_guard<std::mutex> g(foundMutex);
+                        found.push_back(path.string());
+                    }
+
+                    // Log this thread’s work
+                    {
+                    static std::mutex tlogMutex;
+                    std::lock_guard<std::mutex> lg(tlogMutex);
+                    auto tlog = openThreadLog();
+                    tlog << timestampNow()
+                        << " | thread=" << std::this_thread::get_id()
+                        << " processed: " << path.string()
+                        << "\n";
+                    }
                 }
             }
+        };
+
+        // Split work
+        int total = allFiles.size();
+        int chunk = std::max(1, total / threadCount.load());
+        int start = 0;
+
+        for (int i = 0; i < threadCount; ++i) {
+            int end = std::min(start + chunk, total);
+            workers.emplace_back(workerFunc, start, end);
+            start = end;
         }
+
+        // join workers
+        for (auto &t : workers) t.join();
 
         {
             std::lock_guard<std::mutex> lg(resultMutex);
+            // Вставляем количество найденных файлов в начало
+
+            searchResults = found;
+            std::cout << "Found files: " << found.size() << std::endl;
+
             if (found.empty()) {
                 // not found in startDir
                 if (!searchEverywhere) {
@@ -157,6 +236,7 @@ void searchFiles(const fs::path& dir, const std::string& filenamePart, bool sear
             } else {
                 // return all found
                 searchResults = found;
+                log << "=== End Search ===\n\n";
             }
         }
     } catch (const std::exception& e) {
@@ -192,14 +272,22 @@ static size_t cursorIndexFromMouseX(const sf::Text &textPrototype, const std::st
 }
 
 int main() {
-    /*try {
-        std::locale::global(std::locale("ru_RU.UTF-8"));
-        std::wcout.imbue(std::locale("ru_RU.UTF-8"));
-        std::cout.imbue(std::locale("ru_RU.UTF-8"));
-    } catch (...) {
-        std::cerr << "Locale ru_RU.UTF-8 not available, using default." << std::endl;
-    }*/
 
+    std::cout << "Enter number of threads: ";
+    int tc;
+    std::cin >> tc;
+    if (tc > 0) threadCount = tc;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+
+     setlocale(LC_ALL, "");
+
+    try {
+        std::locale loc(""); // user's default locale (may be UTF-8)
+        std::locale::global(loc);
+        std::wcout.imbue(loc);
+        std::cout.imbue(loc);
+    } catch (...) {
+    }
 
     // create log dir early
     try {
@@ -213,11 +301,7 @@ int main() {
     // Load font (use Unicode-capable font)
     sf::Font font;
     std::vector<std::string> fontPaths = {
-        "/Library/Fonts/Arial Unicode.ttf",
-        "/Library/Fonts/Arial.ttf",
-        "/System/Library/Fonts/Athelas.ttc",
-        "/System/Library/Fonts/Supplemental/Arial.ttf",
-        "assets/arial.ttf"
+        "assets/DejaVuSans.ttf"
     };
     bool fontLoaded = false;
     for (auto &p : fontPaths) {
@@ -228,9 +312,11 @@ int main() {
         }
     }
     if (!fontLoaded) {
-        std::cerr << "Failed to load any font. Place a ttf in assets/arial.ttf or install Arial Unicode.\n";
+        std::cerr << "Failed to load any font.";
         return 1;
     }
+
+    std::cout << font.getInfo().family << std::endl;
 
     // UI elements
     sf::Text title(font, "File Search App", 48);
@@ -283,7 +369,12 @@ int main() {
         size_t cursorPos = typingDir ? dirCursorPos : fileCursorPos;
 
         sf::Text temp(activeText);
-        temp.setString(input.substr(0, cursorPos));
+
+        sf::String prefixU32 = utf8ToU32(input);
+        prefixU32 = prefixU32.substring(0, cursorPos);
+
+        temp.setString(prefixU32);
+
         sf::FloatRect bounds = temp.getGlobalBounds();
         cursor.setPosition({ bounds.position.x + bounds.size.x + 2.f, bounds.position.y });
     };
@@ -292,6 +383,7 @@ int main() {
 
     // main loop
     while (window.isOpen()) {
+
         while (auto event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
                 window.close();
@@ -303,11 +395,15 @@ int main() {
                 } else if (kp->code == sf::Keyboard::Key::Tab) {
                     typingDir = !typingDir;
                 } else if (kp->code == sf::Keyboard::Key::Left) {
-                    if (typingDir) { if (dirCursorPos > 0) --dirCursorPos; }
-                    else { if (fileCursorPos > 0) --fileCursorPos; }
+                    if (typingDir) { if (dirCursorPos > 0) dirCursorPos--; }
+                    else { if (fileCursorPos > 0) fileCursorPos--; }
                 } else if (kp->code == sf::Keyboard::Key::Right) {
-                    if (typingDir) { if (dirCursorPos < dirInput.size()) ++dirCursorPos; }
-                    else { if (fileCursorPos < fileInput.size()) ++fileCursorPos; }
+                    if (typingDir) { 
+                        sf::String u32 = utf8ToU32(dirInput);
+                        if (dirCursorPos < u32.getSize()) dirCursorPos++; }
+                    else {
+                        sf::String u32 = utf8ToU32(dirInput);
+                        if (fileCursorPos < u32.getSize()) fileCursorPos++; }
                 } else if (kp->code == sf::Keyboard::Key::Enter) {
                     // start search (same behavior as click Search)
                     if (!searching) {
@@ -342,13 +438,18 @@ int main() {
             if (auto te = event->getIf<sf::Event::TextEntered>()) {
                 if (!searching) {
                     uint32_t code = te->unicode;
-                    std::string *input = typingDir ? &dirInput : &fileInput;
-                    size_t *cursorPos = typingDir ? &dirCursorPos : &fileCursorPos;
+                    
+                    if (code < 32 && code != 8 && code != 13) continue;
+
+                    std::string &input = typingDir ? dirInput : fileInput;
+                    size_t &cursorPos = typingDir ? dirCursorPos : fileCursorPos;
+
+                    sf::String u32 = utf8ToU32(input);
 
                     if (code == 8) { // backspace
-                        if (*cursorPos > 0) {
-                            input->erase(*cursorPos - 1, 1);
-                            --(*cursorPos);
+                        if (cursorPos > 0) {
+                            u32.erase(cursorPos - 1);
+                            cursorPos--;
                         }
                     } else if (code == 13 || code == '\r') {
                         // Enter - start search
@@ -375,17 +476,20 @@ int main() {
                             if (searchThread.joinable()) searchThread.join();
                             searchThread = std::thread(searchFiles, startDir, fileInput, searchEverywhere);
                         }
-                    } else if (code >= 32) {
-                        // append unicode to UTF-8 string
-                        // insert at cursor byte position (approximation)
-                        std::string tmp;
-                        appendUtf8(tmp, code);
-                        input->insert(*cursorPos, tmp);
-                        *cursorPos += tmp.size();
+                    }  else {
+                        u32.insert(cursorPos, static_cast<char32_t>(code));
+                        cursorPos++;
                     }
-                    // update displayed texts
-                    dirText.setString(dirInput);
-                    fileText.setString(fileInput);
+
+                    // Обратно в UTF-8
+                    input = u32ToUtf8(u32);
+
+                    // Обновить отображение
+                    if (typingDir)
+                        dirText.setString(u32);
+                    else
+                        fileText.setString(u32);
+                    
                 }
             }
 
@@ -497,7 +601,7 @@ int main() {
                     sf::Text t(font);
                     t.setFont(font);
                     t.setCharacterSize(20);
-                    t.setString(ln);
+                    t.setString(toSf(ln));
                     t.setPosition({50.f, resultsStartY + resultLines.size() * lineSpacing + scrollOffset});
                     resultLines.push_back(t);
                 }
@@ -505,8 +609,8 @@ int main() {
         }
 
         // update displayed inputs and cursor position
-        dirText.setString(dirInput);
-        fileText.setString(fileInput);
+        dirText.setString(utf8ToU32(dirInput));
+        fileText.setString(utf8ToU32(fileInput));
 
         // cursor position: position at text width of prefix
         if (typingDir) {
@@ -544,7 +648,7 @@ int main() {
             for (const auto& s : searchResults) {
                 auto lines = wrapPath(s, wrapChars);
                 for (auto &ln : lines) {
-                    sf::Text t(font, ln, 22);
+                    sf::Text t(font, utf8ToU32(ln), 22);
                     t.setPosition({ 50.f, y });
                     t.setFillColor(sf::Color::White);
 
@@ -557,12 +661,6 @@ int main() {
         }
         // draw cursor
         if (cursorVisible) window.draw(cursor);
-
-        sf::Text hello(font, "Привет, мир!", 48);
-hello.setPosition({50.f, 100.f});
-hello.setFillColor(sf::Color::White);
-window.draw(hello);
-
 
         window.display();
     }
